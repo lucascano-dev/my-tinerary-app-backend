@@ -12,6 +12,14 @@ let controller = {
     }
   },
 
+  getCityById: async function (req, res) {
+    const id = req.params.id;
+    //    req.query.id =
+
+    console.log(id);
+    res.json("OK");
+  },
+
   addCity: async function (req, res) {
     try {
       // let city = await new City({

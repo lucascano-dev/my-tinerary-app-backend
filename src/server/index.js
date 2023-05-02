@@ -11,5 +11,5 @@ app.use(bodyParser.json());
 app.use("/api/cities", require("../router/City"));
 
 app.listen(3000, () => {
-  console.log("conectadooooo");
+  console.log("El servidor esta ejecutandose en el puerto 3000");
 });
