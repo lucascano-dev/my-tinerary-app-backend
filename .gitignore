@@ -3,3 +3,6 @@
 
 #env variables
 .env
+
+#Archivo .env contiene la clave de bd a cluster mongoDB
+#Ejemplo archivo .env: MONGO_DB_PASSWORD=[Clave_proporcionada_por_MongoDB]
