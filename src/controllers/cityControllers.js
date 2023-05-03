@@ -25,10 +25,13 @@ let controller = {
 
   getCityById: async function (req, res) {
     const id = req.params.id;
-    //    req.query.id =
 
-    console.log(id);
-    res.json("OK");
+    try {
+      let cityId = await cityService.getCityId(id);
+      res.json(cityId);
+    } catch (error) {
+      res.json({ error: error });
+    }
   },
 
   addCity: async function (req, res) {
